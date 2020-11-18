@@ -1,0 +1,14 @@
+<div class="file-label" *ngIf="file">
+    <span class="file-text">
+        {{ file.name }}
+    </span>
+    <button mat-icon-button class="remove-button" (click)="removeFile()">
+        <i class="fas fa-times"></i>
+    </button>
+</div>
+<div class="file-drop-area">
+    <img class="image-container" src="../../../../assets/img/drag_and_drop_image.png">
+    <span class="file-msg">Drop files to instantly upload them or</span>
+    <span class="fake-btn">Browse</span>
+    <input id="fileInput" class="file-input" type="file" [accept]="accept">
+</div>

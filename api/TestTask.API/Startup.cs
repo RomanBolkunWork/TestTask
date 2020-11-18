@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using TestTask.BLL.Services;
 
 namespace TestTask.API
 {
@@ -26,6 +27,19 @@ namespace TestTask.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins",
+                      builder =>
+                      {
+                          builder.AllowAnyOrigin()
+                                 .AllowAnyHeader()
+                                 .AllowAnyMethod();
+                      });
+            });
+
+            services.AddTransient<IAggregationService, AggregationService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,6 +49,8 @@ namespace TestTask.API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors("AllowAllOrigins");
 
             app.UseHttpsRedirection();
 

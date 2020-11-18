@@ -1,0 +1,76 @@
+:host {
+    .file-drop-area {
+        border: 3px dashed #828283;
+        border-radius: 3px;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .file-drop-area.is-active {
+        background-color: #bdbfc1;
+    }
+
+    .image-container {
+        height: 10em;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .fake-btn {
+        background-color: #828283;
+        margin-top: 5px;
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 1.2em;
+    }
+
+    .file-msg {
+        font-size: 1.2em;
+        font-weight: 300;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        max-width: calc(100% - 130px);
+        vertical-align: middle;
+        color: #bdbfc1;
+    }
+
+    .file-input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .file-input:focus {
+        outline: none;
+    }
+
+    .file-label {
+        background-color: #828283;
+        padding: 2px 8px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .file-text {
+            font-size: 15px;
+        }
+
+        .remove-button {
+            font-size: 18px;
+        }
+    }
+}

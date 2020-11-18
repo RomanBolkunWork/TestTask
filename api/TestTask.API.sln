@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTask.API", "TestTask.API\TestTask.API.csproj", "{3561A23A-7979-476E-BFA8-511480A60FFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTask.API", "TestTask.API\TestTask.API.csproj", "{3561A23A-7979-476E-BFA8-511480A60FFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTask.BLL", "TestTask.BLL\TestTask.BLL.csproj", "{F42C06BE-AB66-4661-81C5-D4BDACD4AF42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTask.DTO", "TestTask.DTO\TestTask.DTO.csproj", "{C4D07F86-34F0-4BA0-ACCD-35445CC59069}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{3561A23A-7979-476E-BFA8-511480A60FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3561A23A-7979-476E-BFA8-511480A60FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3561A23A-7979-476E-BFA8-511480A60FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F42C06BE-AB66-4661-81C5-D4BDACD4AF42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F42C06BE-AB66-4661-81C5-D4BDACD4AF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F42C06BE-AB66-4661-81C5-D4BDACD4AF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F42C06BE-AB66-4661-81C5-D4BDACD4AF42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4D07F86-34F0-4BA0-ACCD-35445CC59069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4D07F86-34F0-4BA0-ACCD-35445CC59069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4D07F86-34F0-4BA0-ACCD-35445CC59069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4D07F86-34F0-4BA0-ACCD-35445CC59069}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
