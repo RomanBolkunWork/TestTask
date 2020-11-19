@@ -13,7 +13,7 @@ export class ApiService {
 
     processFile(file: File): Observable<Array<IAggregatedItem>> {
         return this.http.post<Array<IAggregatedItem>>(
-            `https://localhost:44328/api/ProcessData/GetDataFromFile`,
+            `https://test-task-api.azurewebsites.net/api/ProcessData/GetDataFromFile`,
             CommonHelper.getFormDataOptions([file]));
     }
 }

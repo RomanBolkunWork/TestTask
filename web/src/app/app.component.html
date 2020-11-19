@@ -1,9 +1,11 @@
-<div *ngIf="!isLoaded">
-    <div class="upload-area">
-        <app-file-upload [(ngModel)]="file" [accept]="fileFormat"></app-file-upload>
+<div class="content">
+    <div *ngIf="!isLoaded">
+        <div class="upload-area">
+            <app-file-upload [(ngModel)]="file" [accept]="fileFormat"></app-file-upload>
+        </div>
+        <div class="submit">
+            <button mat-raised-button color="primary" (click)="uploadFile()" [disabled]="!file">Upload File</button>
+        </div>
     </div>
-    <div class="submit">
-        <button mat-raised-button color="primary" (click)="uploadFile()" [disabled]="!file">Upload File</button>
-    </div>
+    <div class="container" id="container"></div>
 </div>
-<div class="container" id="container"></div>
