@@ -39,6 +39,8 @@ namespace TestTask.API
                       });
             });
 
+            services.AddMvc();
+
             services.AddTransient<IAggregationService, AggregationService>();
         }
 
